@@ -1,0 +1,301 @@
+{
+ "nodes": {
+  "168240f122191bbcfac6809a43b77477b7de806f": {
+   "name": "72-sentiment.js",
+   "types": [
+    "sentiment"
+   ],
+   "enabled": true
+  },
+  "7e6822370ec2400d993acc2ceba2c42ccf67238f": {
+   "name": "20-inject.js",
+   "types": [
+    "inject"
+   ],
+   "enabled": true
+  },
+  "1dea03c67ec35b80b644862ced566aa6a3079794": {
+   "name": "58-debug.js",
+   "types": [
+    "debug"
+   ],
+   "enabled": true
+  },
+  "a0de8903b5b30a2554fcf469adf0dddfa87214cd": {
+   "name": "75-exec.js",
+   "types": [
+    "exec"
+   ],
+   "enabled": true
+  },
+  "93821ed0309b5810574f1b44488330cfc97032f1": {
+   "name": "80-function.js",
+   "types": [
+    "function"
+   ],
+   "enabled": true
+  },
+  "4dbd49df295ea6d65e946980621f1686c2034cf5": {
+   "name": "80-template.js",
+   "types": [
+    "template"
+   ],
+   "enabled": true
+  },
+  "b80177c5fc6dc1ccee736589689b9486d5176f45": {
+   "name": "89-delay.js",
+   "types": [
+    "delay"
+   ],
+   "enabled": true
+  },
+  "811ea3bab7ef654dfe590af8309dfee2226ba151": {
+   "name": "89-trigger.js",
+   "types": [
+    "trigger"
+   ],
+   "enabled": true
+  },
+  "ba5b92a55397ba93540e5f09b2ecfe1cc092e6f9": {
+   "name": "90-comment.js",
+   "types": [
+    "comment"
+   ],
+   "enabled": true
+  },
+  "18bb3c94cf572e9020ed2445ad7f993026ad88b4": {
+   "name": "98-unknown.js",
+   "types": [
+    "unknown"
+   ],
+   "enabled": true
+  },
+  "57052a8c8faa088b16a0d91a8b677484063c1f79": {
+   "name": "61-imap.js",
+   "types": [
+    "imap"
+   ],
+   "enabled": true
+  },
+  "2d78e536bddfb4b9be60bcc192af8918af865108": {
+   "name": "73-parsexml.js",
+   "types": [
+    "xml2js"
+   ],
+   "enabled": true
+  },
+  "84399d7c465009a1899e29123c428556620b8cfc": {
+   "name": "74-js2xml.js",
+   "types": [
+    "json2xml"
+   ],
+   "enabled": true
+  },
+  "78d6521d312ce699cad39f0d5fb2feb9a3730e3d": {
+   "name": "90-httpget.js",
+   "types": [
+    "httpget"
+   ],
+   "enabled": true
+  },
+  "eec4c81dda596bac9ec18cf3f90f0e9b8a1541f2": {
+   "name": "35-arduino.js",
+   "types": [
+    "arduino in",
+    "arduino out",
+    "arduino-board"
+   ],
+   "enabled": true
+  },
+  "f267db0db26a2d9d1be9dc915effbdbbf5a87603": {
+   "name": "36-rpi-gpio.js",
+   "types": [
+    "rpi-gpio in",
+    "rpi-gpio out"
+   ],
+   "enabled": true
+  },
+  "2a81121952cd53975431044db5697b7a23562420": {
+   "name": "10-mqtt.js",
+   "types": [
+    "mqtt in",
+    "mqtt out",
+    "mqtt-broker"
+   ],
+   "enabled": true
+  },
+  "9c725b73403b599bf018dfda3a0e31949c45e389": {
+   "name": "21-httpin.js",
+   "types": [
+    "http in",
+    "http response",
+    "http request"
+   ],
+   "enabled": true
+  },
+  "90762b6e63a8722880aab8fc8e6d66f414369d05": {
+   "name": "22-websocket.js",
+   "types": [
+    "websocket in",
+    "websocket out",
+    "websocket-listener"
+   ],
+   "enabled": true
+  },
+  "2ab7283aac434ce913bb0a8be080457d79645dcb": {
+   "name": "23-watch.js",
+   "types": [
+    "watch"
+   ],
+   "enabled": true
+  },
+  "3e225ea35fe3fe38f91af25bc76b2cb64c69704d": {
+   "name": "25-serial.js",
+   "types": [
+    "serial in",
+    "serial out",
+    "serial-port"
+   ],
+   "enabled": true
+  },
+  "294fb060966fc5e8bba11d0a7a9fd02b8f1e56dd": {
+   "name": "31-tcpin.js",
+   "types": [
+    "tcp in",
+    "tcp out",
+    "tcp request"
+   ],
+   "enabled": true
+  },
+  "4592bbf4458304cebbecfde88c1afe3e19c22023": {
+   "name": "32-udp.js",
+   "types": [
+    "udp in",
+    "udp out"
+   ],
+   "enabled": true
+  },
+  "96283cd2c35b10355078a5c3d74dce0008f04ab7": {
+   "name": "10-switch.js",
+   "types": [
+    "switch"
+   ],
+   "enabled": true
+  },
+  "bd276b015770bc204625d9828f10381b2e848d3e": {
+   "name": "15-change.js",
+   "types": [
+    "change"
+   ],
+   "enabled": true
+  },
+  "04a0d8be06f0a95701da153a98d894e031b87879": {
+   "name": "16-range.js",
+   "types": [
+    "range"
+   ],
+   "enabled": true
+  },
+  "fa5318dc416171cdd36f93867ea91503a4b7b471": {
+   "name": "70-CSV.js",
+   "types": [
+    "csv"
+   ],
+   "enabled": true
+  },
+  "7604b3cb496f61baa1bacab0ea023424673c34a9": {
+   "name": "70-HTML.js",
+   "types": [
+    "html"
+   ],
+   "enabled": true
+  },
+  "54fdc6034c0a23656518b330edc1a9c8dd3e1124": {
+   "name": "70-JSON.js",
+   "types": [
+    "json"
+   ],
+   "enabled": true
+  },
+  "666c4595bbff7b1c00c5458035fd4e68c74ed667": {
+   "name": "70-XML.js",
+   "types": [
+    "xml"
+   ],
+   "enabled": true
+  },
+  "170015ecd1c4a998621de33ed1c8de3ea189c7a1": {
+   "name": "27-twitter.js",
+   "types": [
+    "twitter-credentials",
+    "twitter in",
+    "twitter out"
+   ],
+   "enabled": true
+  },
+  "4f211cfe389b116b1ec70807cd4ce08172aaafe5": {
+   "name": "32-feedparse.js",
+   "types": [
+    "feedparse"
+   ],
+   "enabled": true
+  },
+  "90e1330a1d9eed0e508e897ebefc370b40bfa68c": {
+   "name": "61-email.js",
+   "types": [
+    "e-mail",
+    "e-mail in"
+   ],
+   "enabled": true
+  },
+  "82a6ac6e60d125fc617130cc1afb3c4712bb7edb": {
+   "name": "91-irc.js",
+   "types": [
+    "irc in",
+    "irc out",
+    "irc-server"
+   ],
+   "enabled": true
+  },
+  "48dfad8ea22b340962af108b00c692107640a9c0": {
+   "name": "28-tail.js",
+   "types": [
+    "tail"
+   ],
+   "enabled": true
+  },
+  "303e8254543608e6669a3ca9bc3ef30efb851170": {
+   "name": "50-file.js",
+   "types": [
+    "file",
+    "file in"
+   ],
+   "enabled": true
+  },
+  "a17ca21d4ec762909f94a41538314b6550457535": {
+   "name": "65-redisout.js",
+   "types": [
+    "redis out"
+   ],
+   "enabled": true
+  },
+  "be7742d64b44271c62c386abd5914f43453fa182": {
+   "name": "66-mongodb.js",
+   "types": [
+    "mongodb",
+    "mongodb out",
+    "mongodb in"
+   ],
+   "enabled": true
+  },
+  "c1e80ef9b6b7107b4f6d9e505bbe0eed8b559046": {
+   "name": "10-salesforce.js",
+   "types": [
+    "salesforce-credentials",
+    "salesforce in",
+    "salesforce out"
+   ],
+   "enabled": true
+  }
+ }
+}

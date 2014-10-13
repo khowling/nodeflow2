@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+var debug = require('debug')('nodeflow');
+var server = require('../app');
+var RED = require("node-red");
+
+/*
+app.set('port', process.env.PORT || 3000);
+
+var server = app.listen(app.get('port'), function() {
+  debug('Express server listening on port ' + server.address().port);
+});
+*/
+
+server.listen(process.env.PORT || 3000);
+RED.start();
