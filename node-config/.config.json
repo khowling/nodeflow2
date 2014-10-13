@@ -296,6 +296,303 @@
     "salesforce out"
    ],
    "enabled": true
+  },
+  "588fbdceb09a5b9eff58bb2eafb057426fbf2163": {
+   "name": "72-sentiment.js",
+   "types": [
+    "sentiment"
+   ],
+   "enabled": true
+  },
+  "ff34ea6bf5e5d91f6d9d34f376726a42bd254db4": {
+   "name": "20-inject.js",
+   "types": [
+    "inject"
+   ],
+   "enabled": true
+  },
+  "47e9f3225ef5d7a83b5f5a5abab088f48fe6e11a": {
+   "name": "58-debug.js",
+   "types": [
+    "debug"
+   ],
+   "enabled": true
+  },
+  "1b9c096cc7d7ea0dcbd3420d699d77edef8a2ff4": {
+   "name": "75-exec.js",
+   "types": [
+    "exec"
+   ],
+   "enabled": true
+  },
+  "348d9bede51b1cb9a19ee304980eb4d715967f2b": {
+   "name": "80-function.js",
+   "types": [
+    "function"
+   ],
+   "enabled": true
+  },
+  "41d0e097ce23cdb9330ecfca777d26bf738c4c68": {
+   "name": "80-template.js",
+   "types": [
+    "template"
+   ],
+   "enabled": true
+  },
+  "fe8e3753d6bfedc32f84f801b3e50269b526c795": {
+   "name": "89-delay.js",
+   "types": [
+    "delay"
+   ],
+   "enabled": true
+  },
+  "a2a70db0ad06732d35bb21cbdf04ce51ef78ea25": {
+   "name": "89-trigger.js",
+   "types": [
+    "trigger"
+   ],
+   "enabled": true
+  },
+  "6ab1241931a5f18deb1d6c7ed5f10101f4afc88a": {
+   "name": "90-comment.js",
+   "types": [
+    "comment"
+   ],
+   "enabled": true
+  },
+  "f2d89f27034ecec2ae7144d5d452e0c326c10244": {
+   "name": "98-unknown.js",
+   "types": [
+    "unknown"
+   ],
+   "enabled": true
+  },
+  "4a0dfc18c82e7996f016465cf71695a780adb998": {
+   "name": "61-imap.js",
+   "types": [
+    "imap"
+   ],
+   "enabled": true
+  },
+  "9a5b367e3c0379f4bc83b477dc4c32ed4dd68f86": {
+   "name": "73-parsexml.js",
+   "types": [
+    "xml2js"
+   ],
+   "enabled": true
+  },
+  "6ad24303e81ec0bcc5cc80cea352f3f21e453b84": {
+   "name": "74-js2xml.js",
+   "types": [
+    "json2xml"
+   ],
+   "enabled": true
+  },
+  "80878c40d35302e9f7ea3f834fc83577bb37ec52": {
+   "name": "90-httpget.js",
+   "types": [
+    "httpget"
+   ],
+   "enabled": true
+  },
+  "c75f48acd16515256c7a3895e648fbbd4c94cb0d": {
+   "name": "35-arduino.js",
+   "types": [
+    "arduino in",
+    "arduino out",
+    "arduino-board"
+   ],
+   "enabled": true
+  },
+  "7a6699455ea06b875b654f09a502a2ec723ea2d0": {
+   "name": "36-rpi-gpio.js",
+   "types": [
+    "rpi-gpio in",
+    "rpi-gpio out"
+   ],
+   "enabled": true
+  },
+  "37ec3b875aea52f40cbb6197a90ec1ac62def3b3": {
+   "name": "10-mqtt.js",
+   "types": [
+    "mqtt in",
+    "mqtt out",
+    "mqtt-broker"
+   ],
+   "enabled": true
+  },
+  "7d13056c757326aeaf0ddc53b535208bfc3d5fb3": {
+   "name": "21-httpin.js",
+   "types": [
+    "http in",
+    "http response",
+    "http request"
+   ],
+   "enabled": true
+  },
+  "e845c9196dbfd161a4711c968a46dd94ee097658": {
+   "name": "22-websocket.js",
+   "types": [
+    "websocket in",
+    "websocket out",
+    "websocket-listener"
+   ],
+   "enabled": true
+  },
+  "a27fc5dad3ef7687982384b7eb1653e0ac3d4e72": {
+   "name": "23-watch.js",
+   "types": [
+    "watch"
+   ],
+   "enabled": true
+  },
+  "6c303426eca95c8ce3858e080fe899794dab9ced": {
+   "name": "25-serial.js",
+   "types": [
+    "serial in",
+    "serial out",
+    "serial-port"
+   ],
+   "enabled": true
+  },
+  "81542d33ced30320ae5a10fabb6919add5f30183": {
+   "name": "31-tcpin.js",
+   "types": [
+    "tcp in",
+    "tcp out",
+    "tcp request"
+   ],
+   "enabled": true
+  },
+  "8cc4d1632c83262327854f263d849ba1bdc22314": {
+   "name": "32-udp.js",
+   "types": [
+    "udp in",
+    "udp out"
+   ],
+   "enabled": true
+  },
+  "98a981a722b0bdecc7750010f23b707e4306c78b": {
+   "name": "10-switch.js",
+   "types": [
+    "switch"
+   ],
+   "enabled": true
+  },
+  "4edd673a3cd410db69fe76fe6895ef8022ea4469": {
+   "name": "15-change.js",
+   "types": [
+    "change"
+   ],
+   "enabled": true
+  },
+  "bb59ff55ae8072c498ffd1d5084b454b38904a4e": {
+   "name": "16-range.js",
+   "types": [
+    "range"
+   ],
+   "enabled": true
+  },
+  "b3333e4e33f18bbc827ae98711e4cc248deb5f63": {
+   "name": "70-CSV.js",
+   "types": [
+    "csv"
+   ],
+   "enabled": true
+  },
+  "6b297988b11bd24d56dcb09d3b03f77015c82573": {
+   "name": "70-HTML.js",
+   "types": [
+    "html"
+   ],
+   "enabled": true
+  },
+  "0173d976ae36222fecbafbc4ed7fdde42101c4ab": {
+   "name": "70-JSON.js",
+   "types": [
+    "json"
+   ],
+   "enabled": true
+  },
+  "775161113b46d93a3a56744e01eeb921cdb32ee5": {
+   "name": "70-XML.js",
+   "types": [
+    "xml"
+   ],
+   "enabled": true
+  },
+  "ff00fdd227ca6ca090a3ff2a5e18fc395c97b23d": {
+   "name": "27-twitter.js",
+   "types": [
+    "twitter-credentials",
+    "twitter in",
+    "twitter out"
+   ],
+   "enabled": true
+  },
+  "13a518c2e9f12929adea5af04d7a71d22882639e": {
+   "name": "32-feedparse.js",
+   "types": [
+    "feedparse"
+   ],
+   "enabled": true
+  },
+  "9830a4aee179ae9108d214a466825b78de8d5b96": {
+   "name": "61-email.js",
+   "types": [
+    "e-mail",
+    "e-mail in"
+   ],
+   "enabled": true
+  },
+  "48a623cf3a4cbd389b5dff000d5a83cccf177b8e": {
+   "name": "91-irc.js",
+   "types": [
+    "irc in",
+    "irc out",
+    "irc-server"
+   ],
+   "enabled": true
+  },
+  "10f4a38d9676f68606aad34af4d8f154cdf73b82": {
+   "name": "28-tail.js",
+   "types": [
+    "tail"
+   ],
+   "enabled": true
+  },
+  "80b04d40f4276271b0a313ffd81e55d2eb227769": {
+   "name": "50-file.js",
+   "types": [
+    "file",
+    "file in"
+   ],
+   "enabled": true
+  },
+  "edd1abb555527607f6d0cd615deb6972d129523a": {
+   "name": "65-redisout.js",
+   "types": [
+    "redis out"
+   ],
+   "enabled": true
+  },
+  "9b64a9fd50ccdbfa23d103518552f0f0f01e0960": {
+   "name": "66-mongodb.js",
+   "types": [
+    "mongodb",
+    "mongodb out",
+    "mongodb in"
+   ],
+   "enabled": true
+  },
+  "7de1d1afacdc50d2b1b7597f13926ee5d0fca4dc": {
+   "name": "10-salesforce.js",
+   "types": [
+    "salesforce-credentials",
+    "salesforce in",
+    "salesforce out"
+   ],
+   "enabled": true
   }
  }
 }

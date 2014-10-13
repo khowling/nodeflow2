@@ -397,7 +397,8 @@ System.debug('Created new PushTopic: '+ pushTopic.Id);
 		<select type="text" id="node-input-output_type" style="display: inline-block; vertical-align: middle; width:60%;">
 			<option value="insert">Insert</option>            
 			<option value="update">Update</option>
-		    <option value="upsert">Upsert</option>
+		        <option value="upsert">Upsert</option>
+			<option value="chatter">Chatter</option>
 		</select>
 	</div>
 	
@@ -551,6 +552,12 @@ System.debug('Created new PushTopic: '+ pushTopic.Id);
                 var type = $("#node-input-output_type option:selected").val();
                 console.log ('node-input-output_type: ' + type);
 
+		if (type == "chatter") {
+			$("#node-input-output_sobject-row").hide();
+		} else {
+                    	refresh_sobject_field();
+			$("#node-input-output_sobject-row").show();
+		}
                 $("#node-input-upsert_field_row").hide();
 
                 if (type == "upsert") {

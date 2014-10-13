@@ -80,7 +80,7 @@ module.exports = function(RED) {
 
                         var getopts = {
                             hostname: url.parse(credentials.instance_url).hostname,
-                            path: '/services/data/v29.0/query/?q=' + encodeURIComponent(query),
+                            path: '/services/data/v31.0/query/?q=' + encodeURIComponent(query),
                             headers: {
                                 'Authorization': 'Bearer ' + credentials.access_token
                             }};
@@ -132,8 +132,8 @@ module.exports = function(RED) {
                             /* source : https://github.com/faye/faye/blob/master/javascript/protocol/client.js */
                             if (!node._fayeClient) {
                                 Faye.Transport.NodeHttp.prototype.batching = false; // prevent streaming API server error
-                                Faye.Logging.LOG_LEVELS = 0;
-                                node._fayeClient = new Faye.Client(credentials.instance_url + '/cometd/29.0', {});
+                                Faye.Logging.LOG_LEVELS = 1;
+                                node._fayeClient = new Faye.Client(credentials.instance_url + '/cometd/31.0', {});
                                 node._fayeClient.setHeader('Authorization', 'Bearer ' + credentials.access_token);
                             }
                             node.log('subscript Faye Client : ' + "/topic/" + node.push_topic);
@@ -184,6 +184,11 @@ module.exports = function(RED) {
                     clearInterval(this.poll_ids[i]);
                 }
             }
+            if (this._fayeClient) {
+                this.log('Unsubscribing from ' + this.push_topic);
+                this._fayeClient.unsubscribe("/topic/" + this.push_topic)
+            }
+
         });
     }
 
@@ -265,7 +270,7 @@ module.exports = function(RED) {
                         console.log('got sendobj : ' + JSON.stringify(sendobj));
                         var postopts = {
                             hostname: url.parse(credentials.instance_url).hostname,
-                            path: '/services/data/v29.0/sobjects/' + node.output_sobject + '/',
+                            path: '/services/data/v31.0/sobjects/' + node.output_sobject + '/',
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json',
@@ -277,6 +282,13 @@ module.exports = function(RED) {
                             postopts.method = 'PATCH';
                             delete sendobj[node.upsert_field];
                         }
+
+                       if (node.output_type == 'chatter') {
+                            postopts.path = '/services/data/v32.0/chatter/feed-elements';
+                            if (msg.feedElementId) {
+                                postopts.path += "/" + msg.feedElementId + "/capabilities/comments/items";
+                            }
+                       }
 
                         node.log('Sending Post ' + JSON.stringify(postopts) + ' DATA : ' + JSON.stringify(sendobj));
 
@@ -307,11 +319,11 @@ module.exports = function(RED) {
     /* Oauth2 Authentication */
 
     var OAuth2 = OAuth.OAuth2;
-    var clientId = '3MVG99qusVZJwhskfsiYZz9vAnyT9mA31FwyiITcHnJM89jB3BfoAZYk.Fm1w4V3.8TQJPYFS54RaR8TrwzXF';
-    var redirectUrl = 'http://localhost:8000/salesforce/auth/callback';
+    var clientId = '3MVG9xOCXq4ID1uFtWNzDuCiEf.z.fxcky.Ov4wuTMwCP4h3.uNze1rUTpPk4iHNzAK4PE1lbuYogbgmr0yb5';
+    var redirectUrl = 'https://raspberrypi:3000/red/salesforce/auth/callback';
     var oa = new OAuth2(
         clientId,
-        '6940772052013320709',
+        '6393807388702255734',
         'https://login.salesforce.com/',
         'services/oauth2/authorize',
         'services/oauth2/token',
@@ -370,11 +382,12 @@ module.exports = function(RED) {
 
         var getMetaSObjectDate = function () {
             var credentials = RED.nodes.getCredentials(nodeid);
+            console.log('getMetaSObjectDate nodeid ' + nodeid + ', got credentials : ' + JSON.stringify(credentials));
 
             /* get the username */
             var getres = '', getopts = {
                 hostname: url.parse(credentials.instance_url).hostname,
-                path: '/services/data/v29.0/' + mode,
+                path: '/services/data/v31.0/' + mode,
                 headers: {
                     'Authorization': 'Bearer ' + credentials.access_token
                 }};

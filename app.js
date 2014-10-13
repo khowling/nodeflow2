@@ -2,7 +2,8 @@ var express = require('express');
 var path = require('path');
 
 var RED = require("node-red");
-var http = require('http');
+var http = require('https');
+var fs = require('fs');
 // Create a server
 
 var app = express();
@@ -11,6 +12,7 @@ app.use("/",express.static("public"));
 
 // Create the settings object - see default settings.js file for other options
 var settings = {
+    verbose: true,
     httpAdminRoot:"/red",
     httpNodeRoot: "/api",
     httpStatic: path.join(__dirname, 'public'),
@@ -19,7 +21,12 @@ var settings = {
     functionGlobalContext: { }    // enables global context
 };
 
-var server = http.createServer(app);
+var options = {
+	cert: fs.readFileSync('ssl-cert-snakeoil.pem'),
+	key: fs.readFileSync('ssl-cert-snakeoil.key')
+};
+
+var server = http.createServer(options,app);
 RED.init(server,settings);
 
 // Serve the editor UI from /red
